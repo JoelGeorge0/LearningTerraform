@@ -2,4 +2,4 @@
 .exe
 .hcl
 .tfstate
-.backup
+.tfstate.backup
