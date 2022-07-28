@@ -24,7 +24,7 @@ resource "azurerm_resource_group" "rgRef" {
 
 resource "azurerm_virtual_network" "vnRef" {
   name                = "${var.prefix}network"
-  address_space       = ["10.0.0.0/16"]
+  address_space       = ["PlaceHolder"]
   location            = azurerm_resource_group.rgRef.location
   resource_group_name = azurerm_resource_group.rgRef.name
 
@@ -38,7 +38,7 @@ resource "azurerm_subnet" "subnet1Ref" {
   name                 = "${var.prefix}subnet1"
   resource_group_name  = azurerm_resource_group.rgRef.name
   virtual_network_name = azurerm_virtual_network.vnRef.name
-  address_prefixes     = ["10.0.2.0/24"]
+  address_prefixes     = ["PlaceHolder"]
 
 }
 
